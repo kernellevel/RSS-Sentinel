@@ -1,5 +1,7 @@
 # RSS-SENTINEL v3.0: NUCLEAR STRIKE ⚡
 
+<img width="991" height="831" alt="image" src="https://github.com/user-attachments/assets/99991299-c45d-4187-b1b1-e5519ef69905" />
+
 ### Stop playing on life support. Your network stack is a mess.
 
 If you own an 8000Hz mouse, a 540Hz monitor, and a Tier-1 fiber connection, but you're still using Windows' default network settings—**you're a bottleneck.** 
