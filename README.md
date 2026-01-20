@@ -74,8 +74,7 @@ The "Auto-Rollback" system creates a snapshot of your network stack before every
 
 1. **Download** the latest release (`RSS-Sentinel.exe`).
 2. **Run as Administrator** (Required for Kernel/Registry access).
-3. Click **"GAMING MODE"**.
-4. *Dominate.*
+3. *Dominate.*
 
 ### OPTION B: DEVELOPER (SOURCE)
 
