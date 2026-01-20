@@ -1,7 +1,8 @@
 # ☢️ RSS-SENTINEL v3.0 [NUCLEAR STRIKE]
 
 <div align="center">
-<img src="[https://github.com/user-attachments/assets/99991299-c45d-4187-b1b1-e5519ef69905](https://github.com/user-attachments/assets/99991299-c45d-4187-b1b1-e5519ef69905)" width="100%" alt="RSS Sentinel Interface" />
+<img width="100%" alt="RSS Sentinel Interface" src="https://github.com/user-attachments/assets/e52ed56d-77a7-496b-931b-3397240a86f7" />
+
 </div>
 
 ## 🩸 THE REALITY CHECK
