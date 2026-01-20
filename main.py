@@ -16,6 +16,7 @@ def get_app_path():
     return os.path.dirname(os.path.abspath(__file__))
 
 BASE_DIR = get_app_path()
+os.chdir(BASE_DIR)
 DEBUG_FILE = os.path.join(BASE_DIR, "debug_start.txt")
 ERROR_FILE = os.path.join(BASE_DIR, "error.log")
 TRACE_FILE = os.path.join(BASE_DIR, "debug_trace.txt")

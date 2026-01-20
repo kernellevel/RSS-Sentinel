@@ -217,7 +217,21 @@ class KernelSurgeon:
         import sys
         key_path = r"Software\Microsoft\Windows\CurrentVersion\Run"
         app_name = "RSS_Sentinel"
-        cmd = f'"{sys.executable}" --tray' if getattr(sys, 'frozen', False) else f'"{sys.executable}" "{os.path.abspath(sys.argv[0])}" --tray'
+        
+        if getattr(sys, 'frozen', False):
+             cmd = f'"{sys.executable}" --tray'
+        else:
+            # Use pythonw.exe to avoid console window on startup
+            py_exe = sys.executable
+            if py_exe.lower().endswith("python.exe"):
+                pyw_exe = py_exe[:-4] + "w.exe"
+                if os.path.exists(pyw_exe):
+                    py_exe = pyw_exe
+            
+            # Ensure we point to the main script correctly
+            script_path = os.path.abspath(sys.argv[0])
+            cmd = f'"{py_exe}" "{script_path}" --tray'
+
         try:
             with winreg.OpenKey(winreg.HKEY_CURRENT_USER, key_path, 0, winreg.KEY_SET_VALUE | winreg.KEY_WRITE) as key:
                 if enable: winreg.SetValueEx(key, app_name, 0, winreg.REG_SZ, cmd)
